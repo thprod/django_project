@@ -1,2 +1,2 @@
 # django_project
-A project by Daniel Elliot and Taylor Hicks.
+A project by Daniel Elliott and Taylor Hicks.
