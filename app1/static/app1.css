@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: lightblue;
 }
 
 nav {
@@ -34,8 +35,14 @@ nav {
   color: black;
 }
 
-.sunsetimg {
-  background-image: url('/app1/static/sunset.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+
+}
+svg rect {
+    fill: blue;
+}
+
+svg text {
+    fill:white;
+    font: 10px sans-serif;
+    text-anchor: end;
 }
