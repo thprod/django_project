@@ -2,7 +2,11 @@ from django.urls import path
 from app1 import views
 
 urlpatterns = [
-    path('app1.html', views.app1, name='app1.html'),
-    path('', views.app1, name='app1.html'),
+    path('', views.index, name='Index'),
+
+    path('index.html', views.index, name='Index'),
+    path('daniel.html', views.daniel, name='Daniel'),
+    path('taylor.html', views.taylor, name='Taylor'),
+    path('jesus.html', views.jesus, name='Jesus'),
     path('about.html', views.about, name='About'),
 ]
