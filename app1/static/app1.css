@@ -10,35 +10,64 @@ body {
 nav {
   text-align: center;
   background-color: rgba(255,255,255,0.1);
-  width: 30vw;
-  height: 6vh;
-  margin: 3% 35%;
-  border-radius: 20px;
-
+  height: 8vh;
+  margin-top: 0vh;
+  border-radius: 0em;
 }
 
-.navbutton {
-  height: 70%;
-  width: 15%;
+.navmain {
+  width: 37vw;
+  float: left;
+  margin-left: 31.5vw;
+}
+
+.navside {
+  width: 12vw;
+  float: right;
+  margin-right: 8vw;
+}
+
+nav button {
+  height: 6vh;
   color: white;
   background-color: rgba(255,255,255,0.0);
-  padding: 1% 1% 1% 1%;
-  margin: 1.5% 1.5% 0% 1.5%;
+  padding: 1vh 0vw 1vh 0vw;
+  margin: 1vh 0vw 0vh 0vw;
   text-decoration: none;
-  transition-duration: 0.1s;
   border: none;
-  border-radius: 15px;
+  transition-duration: 0.5s;
   font-weight: 750;
+  font-size: 2vh;
 }
 
-.navbutton:hover {
+.navbuttonmain {
+  width: 7vw;
+}
+
+.navbuttonside {
+  width: 10.5vw;
+  margin-top: 1vh;
+}
+
+nav button:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
 
-
+nav button:active {
+  background-color: rgba(255,255,255,0.1);
+  outline: none;
+  transition-duration: 0.5s;
+  /*transform: mess with*/
 }
+
+.line {
+  background-color: rgba(255,255,255,0.1);
+  height: 8vh;
+  width: 100vw;
+}
+
 svg rect {
     fill: blue;
 }
