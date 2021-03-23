@@ -1,79 +1,63 @@
 html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
   background-color: lightblue;
 }
 
-nav {
-  text-align: center;
-  background-color: rgba(255,255,255,0.1);
-  height: 8vh;
-  margin-top: 0vh;
-  border-radius: 0em;
-}
-
-.navmain {
-  width: 37vw;
-  float: left;
-  margin-left: 31.5vw;
-}
-
-.navside {
-  width: 12vw;
-  float: right;
-  margin-right: 8vw;
-}
-
-nav button {
-  height: 6vh;
-  color: white;
+.sidenav {
+  height: 2vh;
+  width: 0vw;
+  z-index: 1;
   background-color: rgba(255,255,255,0.0);
-  padding: 1vh 0vw 1vh 0vw;
-  margin: 1vh 0vw 0vh 0vw;
+  transition: 1s;
+  overflow: hidden;
+  margin: 5.7vh 0 0 0;
+}
+
+.sidenav a {
+  margin: 0 1vw 0 1vw;
   text-decoration: none;
-  border: none;
-  transition-duration: 0.5s;
-  font-weight: 750;
-  font-size: 2vh;
+  font-size: 1.25em;
+  color: #111;
+  transition: 0.5s;
+  float: right;
 }
 
-.navbuttonmain {
-  width: 7vw;
+.sidenav a:hover {
+  color: #FFFFFF;
 }
 
-.navbuttonside {
-  width: 10.5vw;
-  margin-top: 1vh;
+.flright {
+  float: right;
 }
 
-nav button:hover {
-  background-color: white;
-  color: black;
+.container {
+  display: inline-block;
   cursor: pointer;
+  float: right;
+  margin: 5vh 5vw 0 1vw;
 }
 
-nav button:active {
-  background-color: rgba(255,255,255,0.1);
-  outline: none;
-  transition-duration: 0.5s;
-  /*transform: mess with*/
+.container:hover div {
+  background-color: #FFFFFF;
 }
 
-.line {
-  background-color: rgba(255,255,255,0.1);
-  height: 8vh;
-  width: 100vw;
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #111;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-svg rect {
-    fill: blue;
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-svg text {
-    fill:white;
-    font: 10px sans-serif;
-    text-anchor: end;
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
